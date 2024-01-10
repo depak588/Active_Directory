@@ -28,3 +28,14 @@ Ex: ./bloodhound-python -u bgill -p freedom -dc dc1.xyz.com --disable-autogc -c 
 (Note: Run the help command to see the detailed explaination)
 
 All the data will be saved in .json files upload the data into the BloodHound GUI and analyse it.
+
+#### Raw Queries for Bloodhound
+
+To Display all computer identified as a collector
+```
+MATCH (m:Computer) RETURN m
+```
+To Display all user accounts on a domain
+```
+MATCH (m:User) RETURN m
+```
