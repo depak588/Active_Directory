@@ -39,3 +39,7 @@ To Display all user accounts on a domain
 ```
 MATCH (m:User) RETURN m
 ```
+To view Active Sessions between Computers
+```
+MATCH p = (c:Computer)-[:HasSession]->(m:User) RETURN p
+```
